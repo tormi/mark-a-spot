@@ -22,14 +22,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -56,14 +48,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -85,14 +69,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_name' => 'field_address',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
     ),
     'indexes' => array(
       'format' => array(
@@ -117,14 +93,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_name' => 'field_attachment',
     'field_permissions' => array(
       'type' => 2,
-    ),
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
     ),
     'indexes' => array(
       'fid' => array(
@@ -152,14 +120,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_name' => 'field_category',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
     ),
     'indexes' => array(
       'tid' => array(
@@ -191,26 +151,18 @@ function mark_a_spot_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'rgb' => array(
+        0 => 'rgb',
       ),
     ),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'color_field',
     'settings' => array(
-      'max_length' => 6,
+      'default_colors' => '#FF0000, #8B0000, #FFA500, #008000, #006400, #ADD8E6, #0000FF, #00008B, #A020F0, #871F78, #5F9EA0, #D3D3D3, #808080, #000000, #F5F5DC, #FFFFFF',
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'color_field_rgb',
   );
 
   // Exported field_base: 'field_category_icon'
@@ -223,26 +175,15 @@ function mark_a_spot_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'markaspot_icon_field',
     'settings' => array(
-      'max_length' => 60,
+      'bundle' => NULL,
+      'icon' => NULL,
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'markaspot_icon_field',
   );
 
   // Exported field_base: 'field_category_id'
@@ -254,14 +195,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_name' => 'field_category_id',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
     ),
     'indexes' => array(
       'format' => array(
@@ -287,14 +220,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -319,7 +244,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(),
     'indexes' => array(
       'lat' => array(
         0 => 'lat',
@@ -345,14 +269,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -377,14 +293,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -401,6 +309,100 @@ function mark_a_spot_field_default_field_bases() {
     'type' => 'image',
   );
 
+  // Exported field_base: 'field_jurisdiction'
+  $field_bases['field_jurisdiction'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_jurisdiction',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'jurisdiction',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_jurisdiction_id'
+  $field_bases['field_jurisdiction_id'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_jurisdiction_id',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 512,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_note'
+  $field_bases['field_note'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_note',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_notes'
+  $field_bases['field_notes'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_notes',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_notify_user'
   $field_bases['field_notify_user'] = array(
     'active' => 1,
@@ -411,7 +413,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 2,
     ),
-    'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -433,20 +434,46 @@ function mark_a_spot_field_default_field_bases() {
   // Exported field_base: 'field_statement'
   $field_bases['field_statement'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_statement',
     'field_permissions' => array(
       'type' => 2,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
+    'indexes' => array(
+      'nid' => array(
+        0 => 'nid',
       ),
+    ),
+    'locked' => 0,
+    'module' => 'node_reference',
+    'settings' => array(
+      'referenceable_types' => array(
+        'article' => 0,
+        'page' => 0,
+        'report' => 0,
+        'statement' => 'statement',
+      ),
+      'view' => array(
+        'args' => array(),
+        'display_name' => '',
+        'view_name' => '',
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'node_reference',
+  );
+
+  // Exported field_base: 'field_statement_comment'
+  $field_bases['field_statement_comment'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_statement_comment',
+    'field_permissions' => array(
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -469,14 +496,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_name' => 'field_status',
     'field_permissions' => array(
       'type' => 2,
-    ),
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
     ),
     'indexes' => array(
       'tid' => array(
@@ -505,26 +524,21 @@ function mark_a_spot_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_status_hex',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
+    'field_permissions' => array(
+      'type' => 0,
     ),
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'rgb' => array(
+        0 => 'rgb',
       ),
     ),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'color_field',
     'settings' => array(
-      'max_length' => 6,
+      'default_colors' => '#FF0000, #8B0000, #FFA500, #008000, #006400, #ADD8E6, #0000FF, #00008B, #A020F0, #871F78, #5F9EA0, #D3D3D3, #808080, #000000, #F5F5DC, #FFFFFF',
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'color_field_rgb',
   );
 
   // Exported field_base: 'field_status_icon'
@@ -534,29 +548,15 @@ function mark_a_spot_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_status_icon',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'markaspot_icon_field',
     'settings' => array(
-      'max_length' => 60,
+      'bundle' => NULL,
+      'icon' => NULL,
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'markaspot_icon_field',
   );
 
   // Exported field_base: 'field_status_id'
@@ -566,7 +566,9 @@ function mark_a_spot_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_status_id',
-    'foreign keys' => array(),
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'number',
@@ -584,14 +586,6 @@ function mark_a_spot_field_default_field_bases() {
     'field_name' => 'field_tags',
     'field_permissions' => array(
       'type' => 1,
-    ),
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
     ),
     'indexes' => array(
       'tid' => array(

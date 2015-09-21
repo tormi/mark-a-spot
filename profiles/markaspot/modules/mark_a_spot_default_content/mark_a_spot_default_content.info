@@ -1,6 +1,8 @@
 name = Mark-a-Spot Default Content
 core = 7.x
 package = Mark-a-Spot
+description = Some default content
+
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image
@@ -17,10 +19,7 @@ features_exclude[dependencies][mark_a_spot] = mark_a_spot
 no autodetect = 1
 project path = profiles/markaspot/modules
 
-
-; Information added by drush on 2014-01-08
-version = "7.x-2.x-dev"
-core = "7.x"
+; Information added by drush on 2015-07-04
+version = "7.x-2.8+10-dev"
 project = "markaspot"
-datestamp = "1389186530"
-
+datestamp = "1436026449"

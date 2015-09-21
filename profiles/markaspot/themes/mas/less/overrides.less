@@ -1,5 +1,27 @@
-// Bootstrap variables.
-@import 'variables.less';
+.block-title.block-title{
+  margin: 20px 0 0 0;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.navbar, .leaflet-bar {
+  border: none;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)!important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)!important;
+}
+
+
+html, body {
+  height: 90%;
+}
+
+// Navbar height.
+@navbar-height:                    42px;
+
+// Wells
+@well-bg:                     #f5f5f5;
+@well-border:                 darken(@well-bg, 2%);
+
 
 // Media query variables.
 @tablet:  ~"screen and (min-width: @{screen-sm-min})";
